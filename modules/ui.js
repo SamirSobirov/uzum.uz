@@ -113,12 +113,12 @@ export function headerCreate(place) {
                     <img class="header__center-icon" src="/icons/header/user.svg" alt="icon">
                     <span class="header__ceter-item-txt" data-reg>${localStorage.getItem('user-name') == null ? 'Войти' : localStorage.getItem('user-name')}</span>
                 </div>
-                <a href="../pages/favorites.html" class="header__center-item">
-                    <img class="header__center-icon" src="../public/icons/header/fav.svg" alt="icon">
+                <a href="/pages/favorites.html" class="header__center-item">
+                    <img class="header__center-icon" src="/icons/header/fav.svg" alt="icon">
                     <span class="header__ceter-item-txt" style="color: black;">Избранное</span>
                 </a>
                 <a href="/pages/cart.html" style="color: black;" class="header__center-item">
-                    <img class="header__center-icon" src="../public/icons/header/shop-bag.svg" alt="icon">
+                    <img class="header__center-icon" src="/icons/header/shop-bag.svg" alt="icon">
                     <span class="header__ceter-item-txt">Корзина</span>
                 </a>
             </div>
@@ -136,7 +136,7 @@ export function headerCreate(place) {
     </div>
     <div class="header__menu-catal-item-wrapper">
         <div class="header__menu-item header__menu-item_drop-down header__menu-item_catal" id="catal-btn">
-            <img src="../public/icons/header/catalog-icon.svg" alt="icon">
+            <img src="/icons/header/catalog-icon.svg" alt="icon">
             <div class="header__menu-txt">Каталог</div>
             <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
                 class="ui-icon toggle-icon">
@@ -150,33 +150,33 @@ export function headerCreate(place) {
             <div class="catalog-list__inner">
                 <div class="catalog-list__item">
                     <div class="catalog-list__left">
-                        <img class="catalog-list__icon" src="../public/icons/header/catalog-icon.svg"
+                        <img class="catalog-list__icon" src="/public/icons/header/catalog-icon.svg"
                             alt="icon">
                         <p class="catalog-list__txt">Lorem, ipsum.</p>
                     </div>
-                    <img class="catalog-list__arrow" src="../public/icons/arrow.svg" alt="icon">
+                    <img class="catalog-list__arrow" src="/icons/arrow.svg" alt="icon">
                 </div>
                 <div class="catalog-list__item">
                     <div class="catalog-list__left">
-                        <img class="catalog-list__icon" src="../public/icons/header/catalog-icon.svg"
+                        <img class="catalog-list__icon" src="/public/icons/header/catalog-icon.svg"
                             alt="icon">
                         <p class="catalog-list__txt">Lorem, ipsum.</p>
                     </div>
-                    <img class="catalog-list__arrow" src="../public/icons/arrow.svg" alt="icon">
+                    <img class="catalog-list__arrow" src="/icons/arrow.svg" alt="icon">
                 </div>
             </div>
         </div>
     </div>
     <div class="header__menu-item">
-        <img src="../public/icons/header/shop-bag.svg" alt="icon">
+        <img src="/icons/header/shop-bag.svg" alt="icon">
         <div class="header__menu-txt">Мои заказы</div>
     </div>
     <div class="header__menu-item">
-        <img src="../public/icons/header/fav.svg" alt="icon">
+        <img src="/icons/header/fav.svg" alt="icon">
         <div class="header__menu-txt">Избранное</div>
     </div>
     <div class="header__menu-item">
-        <img style="width: 16px;" src="../public/icons/header/place-marker.svg" alt="icon">
+        <img style="width: 16px;" src="/icons/header/place-marker.svg" alt="icon">
         <div class="header__menu-txt">Город: 
             <select class="header__location-text_bold header__location-select">
                 <option value="Ташкент">Ташкент</option>
@@ -233,12 +233,12 @@ export function headerCreate(place) {
         <div class="header__langs header__menu-langs">
             <div data-lang class="header__langs-area"></div>
             <div data-lang="ru" class="header__langs-chosen">
-                <img class="header__lang-icon" src="../public/icons/header/ru.svg" alt="icon">
+                <img class="header__lang-icon" src="/icons/header/ru.svg" alt="icon">
                 <span>Русский</span>
             </div>
             <div class="header__langs-list">
                 <div data-lang="uz" class="header__lang">
-                    <img class="header__lang-icon" src="../public/icons/header/uzb.svg" alt="icon">
+                    <img class="header__lang-icon" src="/icons/header/uzb.svg" alt="icon">
                     <span>Узбекский</span>
                 </div>
             </div>
@@ -279,7 +279,7 @@ export function headerCreate(place) {
             <div class="header__floor-flex-box"></div>
             <div class="header__floor-more" id="catal-btn">
                 <span>Ещё</span>
-                <img class="header__floor-more-icon" src="../public/icons/arrow.svg" alt="icon">
+                <img class="header__floor-more-icon" src="/icons/arrow.svg" alt="icon">
             </div>
         </div>
     </div>
@@ -296,7 +296,7 @@ export function footerCreate(place) {
 						<div class="footer__info-item">
 							<div id="acc-item" class="footer__txt_bold">
 								<span>О нас</span>
-								<img class="footer__arrow" src="../public/icons/arrow.svg" alt="icon">
+								<img class="footer__arrow" src="/icons/arrow.svg" alt="icon">
 							</div>
 							<div class="footer__info-list">
 								<div class="footer__txt_thin">Пункты выдачи</div>
@@ -306,7 +306,7 @@ export function footerCreate(place) {
 						<div class="footer__info-item">
 							<div id="acc-item" class="footer__txt_bold">
 								<span>Пользователям</span>
-								<img class="footer__arrow" src="../public/icons/arrow.svg" alt="icon">
+								<img class="footer__arrow" src="/icons/arrow.svg" alt="icon">
 							</div>
 							<div class="footer__info-list">
 								<div class="footer__txt_thin">Связаться с нами</div>
@@ -316,7 +316,7 @@ export function footerCreate(place) {
 						<div class="footer__info-item">
 							<div id="acc-item" class="footer__txt_bold">
 								<span>Для предпринимателей</span>
-								<img class="footer__arrow" src="../public/icons/arrow.svg" alt="icon">
+								<img class="footer__arrow" src="/icons/arrow.svg" alt="icon">
 							</div>
 							<div class="footer__info-list">
 								<div class="footer__txt_thin">Продавайте на Uzum</div>
@@ -330,12 +330,12 @@ export function footerCreate(place) {
 							<div class="footer__app-wrapper">
                                 <div class="footer__app-wrapper-item">
                                     <img class="footer__app-logo"
-                                        src="../public/icons/footer/app-store.svg" alt="logo">
+                                        src="/icons/footer/app-store.svg" alt="logo">
                                         <span class="footer__app-wrapper-text">App Store</span>
                                 </div>
                                 <div class="footer__app-wrapper-item">
 								<img class="footer__app-logo"
-									src="../public/icons/footer/google-play.svg" alt="logo">
+									src="/icons/footer/google-play.svg" alt="logo">
                                     <span class="footer__app-wrapper-text">Google Play</span>
                                 </div>
 							</div>
@@ -343,11 +343,11 @@ export function footerCreate(place) {
 						<div class="footer__sm">
 							<div class="footer__txt_bold">Uzum в соцсетях</div>
 							<div class="footer__sm-wrapper">
-								<img class="footer__app-logo_sm" src="../public/icons/footer/instagram.svg"
+								<img class="footer__app-logo_sm" src="/icons/footer/instagram.svg"
 									alt="logo">
-								<img class="footer__app-logo_sm" src="../public/icons/footer/telegram.svg" alt="logo">
-								<img class="footer__app-logo_sm" src="../public/icons/footer/youtube.svg" alt="logo">
-								<img class="footer__app-logo_sm" src="../public/icons/footer/facebook.svg" alt="logo">
+								<img class="footer__app-logo_sm" src="/icons/footer/telegram.svg" alt="logo">
+								<img class="footer__app-logo_sm" src="/icons/footer/youtube.svg" alt="logo">
+								<img class="footer__app-logo_sm" src="/icons/footer/facebook.svg" alt="logo">
 							</div>
 						</div>
 					</div>
@@ -365,7 +365,7 @@ export function footerCreate(place) {
 				</div>
 			</div>
             <div class="scroll-up">
-				<img class="scroll-up__icon" src="../public/public/icons/arrow.svg" alt="icon">
+				<img class="scroll-up__icon" src="/public/icons/arrow.svg" alt="icon">
 			</div>
 		</div>
     `
@@ -470,7 +470,7 @@ export function realoadProductTypeBlocks(data, place) {
                 <div class="products-type">
                     <h2 class="products-type__heading">
                         <span>${item}</span>
-                        <img src="../public/public/icons/arrow.svg" alt="icon">
+                        <img src="/public/icons/arrow.svg" alt="icon">
                     </h2>
                     <div data-product-type="${item}" class="products-type__grid-block"></div>
                     <div data-is-shown="false" class="products-type__show-more">Показать ещё</div>
@@ -495,17 +495,17 @@ export function reloadProductCards(data, place) {
                                 <img class="product-card__image" src="${item.media[0]}" alt="image">
                             </a>
                             <div class="product-card__fav-icons" data-fav-btn="${item.id}">
-                                <img class="product-card__fav" src="../public/icons/product-cart/fav.svg"
+                                <img class="product-card__fav" src="/public/icons/product-cart/fav.svg"
                                     alt="icon">
                                 <img class="product-card__fav_active"
-                                    src="../public/icons/product-cart/fav-active.svg" alt="icon">
+                                    src="/public/icons/product-cart/fav-active.svg" alt="icon">
                             </div>
                         </div>
                         <div class="product-card__info">
                             <div class="product-card__title">
                                 <span>${item.title}</span>
                                 <div class="product-card__rating">
-                                    <img src="../public/icons/product-cart/rating.svg" alt="icon">
+                                    <img src="/public/icons/product-cart/rating.svg" alt="icon">
                                     <span>${item.rating}</span>
                                 </div>
                             </div>
@@ -516,7 +516,7 @@ export function reloadProductCards(data, place) {
                                     <div class="product-card__sale-price">${salePrice} &#x20BD;</div>
                                 </div>
                                 <img data-add-to-cart="${item.id}" class="product-card__add-to-cart"
-                                    src="../public/icons/product-cart/add-to-cart.svg" alt="icon">
+                                    src="/public/icons/product-cart/add-to-cart.svg" alt="icon">
                             </div>
                         </div>
                     </div>       
@@ -530,17 +530,17 @@ export function reloadProductCards(data, place) {
                             <img class="product-card__image" src="${item.media[0]}" alt="image">
                         </a>
                         <div class="product-card__fav-icons" data-fav-btn="${item.id}">
-                            <img class="product-card__fav" src="../public/icons/product-cart/fav.svg"
+                            <img class="product-card__fav" src="/public/icons/product-cart/fav.svg"
                                 alt="icon">
                             <img class="product-card__fav_active"
-                                src="../public/icons/product-cart/fav-active.svg" alt="icon">
+                                src="/public/icons/product-cart/fav-active.svg" alt="icon">
                         </div>
                     </div>
                     <div class="product-card__info">
                         <div class="product-card__title">
                             <span>${item.title}</span>
                             <div class="product-card__rating">
-                                <img src="../public/icons/product-cart/rating.svg" alt="icon">
+                                <img src="/public/icons/product-cart/rating.svg" alt="icon">
                                 <span>${item.rating}</span>
                             </div>
                         </div>
@@ -551,7 +551,7 @@ export function reloadProductCards(data, place) {
                                 <div class="product-card__sale-price">${salePrice} &#x20BD;</div>
                             </div>
                             <img data-add-to-cart="${item.id}" class="product-card__add-to-cart"
-                                src="../public/icons/product-cart/add-to-cart.svg" alt="icon">
+                                src="/public/icons/product-cart/add-to-cart.svg" alt="icon">
                         </div>
                     </div>
                 </div>       
@@ -599,7 +599,7 @@ export function reloadCartProducts(data, place) {
                 </div>
                 <div class="cart-product__right">
                     <div class="cart-product__delete" data-delete-id="${item.id}">
-                        <img class="cart-product__delete-icon" src="../public/icons/cart/trash.svg"
+                        <img class="cart-product__delete-icon" src="/public/icons/cart/trash.svg"
                             alt="icon">
                         <span>Удалить</span>
                     </div>
@@ -619,7 +619,7 @@ export function searchListReload(data, place) {
     for (let item of data) {
         place.innerHTML += `
         <a href="/pages/product.html" class="search-list__item" data-product-id="${item.id}">
-            <img class="search-list__icon" src="../public/icons/header/search.svg" alt="icon">
+            <img class="search-list__icon" src="/public/icons/header/search.svg" alt="icon">
             <span>${item.title}</span>
         </a>
         `
