@@ -470,7 +470,7 @@ export function realoadProductTypeBlocks(data, place) {
                 <div class="products-type">
                     <h2 class="products-type__heading">
                         <span>${item}</span>
-                        <img src="/public/icons/arrow.svg" alt="icon">
+                        <img src="../public/icons/arrow.svg" alt="icon">
                     </h2>
                     <div data-product-type="${item}" class="products-type__grid-block"></div>
                     <div data-is-shown="false" class="products-type__show-more">Показать ещё</div>
@@ -491,21 +491,21 @@ export function reloadProductCards(data, place) {
                 <div class="swiper-slide">
                     <div class="product-card">
                         <div class="product-card__image-block">
-                            <a data-product-id="${item.id}" href="/pages/product.html">
+                            <a data-product-id="${item.id}" href="../pages/product.html">
                                 <img class="product-card__image" src="${item.media[0]}" alt="image">
                             </a>
                             <div class="product-card__fav-icons" data-fav-btn="${item.id}">
-                                <img class="product-card__fav" src="/public/icons/product-cart/fav.svg"
+                                <img class="product-card__fav" src="../public/icons/product-cart/fav.svg"
                                     alt="icon">
                                 <img class="product-card__fav_active"
-                                    src="/public/icons/product-cart/fav-active.svg" alt="icon">
+                                    src="../public/icons/product-cart/fav-active.svg" alt="icon">
                             </div>
                         </div>
                         <div class="product-card__info">
                             <div class="product-card__title">
                                 <span>${item.title}</span>
                                 <div class="product-card__rating">
-                                    <img src="/public/icons/product-cart/rating.svg" alt="icon">
+                                    <img src="../public/icons/product-cart/rating.svg" alt="icon">
                                     <span>${item.rating}</span>
                                 </div>
                             </div>
@@ -516,7 +516,7 @@ export function reloadProductCards(data, place) {
                                     <div class="product-card__sale-price">${salePrice} &#x20BD;</div>
                                 </div>
                                 <img data-add-to-cart="${item.id}" class="product-card__add-to-cart"
-                                    src="/public/icons/product-cart/add-to-cart.svg" alt="icon">
+                                    src="../public/icons/product-cart/add-to-cart.svg" alt="icon">
                             </div>
                         </div>
                     </div>       
@@ -526,21 +526,21 @@ export function reloadProductCards(data, place) {
             place.innerHTML += `
                 <div class="product-card">
                     <div class="product-card__image-block">
-                        <a data-product-id="${item.id}" href="/pages/product.html">
+                        <a data-product-id="${item.id}" href="../pages/product.html">
                             <img class="product-card__image" src="${item.media[0]}" alt="image">
                         </a>
                         <div class="product-card__fav-icons" data-fav-btn="${item.id}">
-                            <img class="product-card__fav" src="/public/icons/product-cart/fav.svg"
+                            <img class="product-card__fav" src="../public/icons/product-cart/fav.svg"
                                 alt="icon">
                             <img class="product-card__fav_active"
-                                src="/public/icons/product-cart/fav-active.svg" alt="icon">
+                                src="../public/icons/product-cart/fav-active.svg" alt="icon">
                         </div>
                     </div>
                     <div class="product-card__info">
                         <div class="product-card__title">
                             <span>${item.title}</span>
                             <div class="product-card__rating">
-                                <img src="/public/icons/product-cart/rating.svg" alt="icon">
+                                <img src="../public/icons/product-cart/rating.svg" alt="icon">
                                 <span>${item.rating}</span>
                             </div>
                         </div>
@@ -551,7 +551,7 @@ export function reloadProductCards(data, place) {
                                 <div class="product-card__sale-price">${salePrice} &#x20BD;</div>
                             </div>
                             <img data-add-to-cart="${item.id}" class="product-card__add-to-cart"
-                                src="/public/icons/product-cart/add-to-cart.svg" alt="icon">
+                                src="../public/icons/product-cart/add-to-cart.svg" alt="icon">
                         </div>
                     </div>
                 </div>       
