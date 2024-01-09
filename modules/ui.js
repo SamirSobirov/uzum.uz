@@ -45,7 +45,7 @@ export function headerCreate(place) {
                         <div data-lang="uz" class="header__lang">
                             <img class="header__lang-icon" src="/icons/header/uzb.svg"
                                 alt="icon">
-                            <span>O'zbekcha</span>
+                            <span>O'zbekcha</span>GHH
                         </div>
                     </div>
                 </div>
