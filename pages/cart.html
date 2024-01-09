@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" sizes="32x32" href="/icons/uzum-logo.png" />
+    <title>Корзина - Uzum</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="header"></header>
+        <main class="main">
+            <div class="container">
+                <div class="cart">
+                    <h1 class="cart__title">Ваша корзина, <span id="products-count-view">4</span> товар</h1>
+                    <div class="cart__inner">
+                        <div class="cart-products">
+                            <div class="cart-products__heading">
+                                <label class="cart-products__select-all checkbox-container">
+                                    <input checked type="checkbox">
+                                    <svg viewBox="0 0 64 64" height="2em" width="2em">
+                                        <path
+                                            d="M 0 16 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 16 L 32 48 L 64 16 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 16"
+                                            pathLength="575.0541381835938" class="path"></path>
+                                    </svg>
+                                    <span class="cart-products__text">Выбрать все</span>
+                                </label>
+                                <div class="cart-products__delivery-date">
+                                    <span
+                                        class="cart-products__text cart-products__text_sm  cart-products__text_gray">Ближайшая
+                                        дата
+                                        доставки:</span>
+                                    <span data-delivery-date class="cart-products__delivery-date-view">27 июня
+                                        (Сегодня)</span>
+                                </div>
+                            </div>
+                            <div class="cart-products__container"></div>
+                        </div>
+                        <div class="check">
+                            <div class="check__top">
+                                <div class="check__icon-wrapper">
+                                    <img class="check__icon" src="/public/icons/cart/check.svg" alt="icon">
+                                </div>
+                                <div class="check__descr">
+                                    <p>
+                                        <span class="check__text check__text_bold">
+                                            Бесплатно доставим ваш заказ
+                                        </span>
+                                        <span class="check__text">
+                                            в фирменный пункт выдачи
+                                        </span>
+                                    </p>
+                                    <p>
+                                        <span class="check__text_gray">
+                                            Бесплатная доставка до двери со 490 000 сум
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="check__bottom">
+                                <h3 class="check__title">Ваш заказ</h3>
+                                <div class="check__products">
+                                    <div class="check__products-top">
+                                        <span class="check__text">Товары (1):</span>
+                                        <span class="check__text">10 000</span>
+                                    </div>
+                                    <button data-delivery-date class="check__products-button">
+                                        Доставка 27 июня (Сегодня)
+                                    </button>
+                                </div>
+                                <div class="check__total">
+                                    <div class="check__total-top">
+                                        <span class="check__text">Итого:</span>
+                                        <div class="check__total-price-block">
+                                            <span class="check__total-view">10 000 сум</span>
+                                            <span class="check__total-saved">Вы экономили: 10 000 сум</span>
+                                        </div>
+                                    </div>
+                                    <button class="check__total-button" data-check-popup-toggle>
+                                        Перейти к оформлению
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="no-product">
+                    <div class="no-product__image-box">
+                        <img class="no-product__image" src="/public/images/shopocat 1.png" alt="image">
+                    </div>
+                    <div class="no-product__descr">
+                        <h2 class="no-product__title">В корзине пока нет товаров</h2>
+                        <div class="no-product__text">
+                            Начните с подборок на главной странице или найдите нужный товар через поиск
+                        </div>
+                    </div>
+                    <a href="/" class="no-product__link">На главную</a>
+                </div>
+            </div>
+            <div class="popular-products-slider swiper">
+                <h2 class="popular-products-slider__title">Популярные товары</h2>
+                <div class="popular-products-slider__wrapper swiper-wrapper"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </main>
+        <footer class="footer"></footer>
+        <div class="popup"></div>
+        <div class="checkout-popup">
+            <div class="checkout-popup__body">
+                <div class="checkout-popup__area" data-check-popup-toggle></div>
+                <div class="checkout-popup__content">
+                    <div class="checkout-popup__check check-active">
+                        <img class="checkout-popup__close" data-check-popup-toggle src="/public/icons/header/close.svg"
+                            alt="icon">
+                        <div class="check__top">
+                            <div class="check__icon-wrapper">
+                                <img class="check__icon" src="/public/icons/cart/check.svg" alt="icon">
+                            </div>
+                            <div class="check__descr">
+                                <p>
+                                    <span class="check__text check__text_bold">
+                                        Бесплатно доставим ваш заказ
+                                    </span>
+                                    <span class="check__text">
+                                        в фирменный пункт выдачи
+                                    </span>
+                                </p>
+                                <p>
+                                    <span class="check__text_gray">
+                                        Бесплатная доставка до двери со 490 000 сум
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="check__bottom">
+                            <h3 class="check__title">Ваш заказ</h3>
+                            <div class="check__products">
+                                <div class="check__products-top">
+                                    <span class="check__text">Товары (1):</span>
+                                    <span class="check__text">10 000</span>
+                                </div>
+                                <button data-delivery-date class="check__products-button">
+                                    Доставка 27 июня (Сегодня)
+                                </button>
+                            </div>
+                            <div class="check__total">
+                                <div class="check__total-top">
+                                    <span class="check__text">Итого:</span>
+                                    <div class="check__total-price-block">
+                                        <span class="check__total-view">10 000 сум</span>
+                                        <span class="check__total-saved">Вы экономили: 10 000 сум</span>
+                                    </div>
+                                </div>
+                                <button class="check__total-button">
+                                    Оформить заказ
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <canvas id="my-canvas"></canvas>
+                <div class="thanks">
+                    <h2 class="thanks__title">Спасибо за покупку!</h2>
+                    <button class="thanks__button" data-check-popup-toggle>Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="/modules/cart.js"></script>
+</body>
+
+</html>

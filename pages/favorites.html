@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" sizes="32x32" href="/icons/uzum-logo.png" />
+    <title>Uzum - Первая в Узбекистане торговая площадка с доставкой товаров на следующий день</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="header"></header>
+        <main class="main">
+            <div class="container">
+                <div class="main__inner">
+                    <div class="heading">
+                        <h1 class="heading__title">Мои желания</h1>
+                        <div class="heading__sort sort">
+                            <div class="sort__text sort__text_gray">Сортировка</div>
+                            <div class="sort__inner">
+                                <div class="sort__item sort__item_main">
+                                    <span class="sort__text">Популярные</span>
+                                    <img class="sort__icon sort__icon_arrow" src="/public/icons/arrow.svg" alt="icon">
+                                </div>
+                                <div class="sort__list">
+                                    <div class="sort__item sort__item_list sort__item_active" data-sort-type="popular">
+                                        <span class="sort__text">Популярные</span>
+                                        <img class="sort__icon sort__icon_tick" src="/public/icons/tick.svg" alt="icon">
+                                    </div>
+                                    <div class="sort__item sort__item_list" data-sort-type="cheap">
+                                        <span class="sort__text">Подешевле</span>
+                                        <img class="sort__icon sort__icon_tick" src="/public/icons/tick.svg" alt="icon">
+                                    </div>
+                                    <div class="sort__item sort__item_list" data-sort-type="expensive">
+                                        <span class="sort__text">Подороже</span>
+                                        <img class="sort__icon sort__icon_tick" src="/public/icons/tick.svg" alt="icon">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products-type__grid-block"></div>
+                </div>
+                <div class="no-product">
+                    <div class="no-product__image-box">
+                        <img class="no-product__image" src="/public/images/shopocat 1.png" alt="image">
+                    </div>
+                    <div class="no-product__descr">
+                        <h2 class="no-product__title">Добавьте то, что понравилось</h2>
+                        <div class="no-product__text">
+                            Нажмите на ♡ в товаре. Войдите в аккаунт и всё избранное сохранится
+                        </div>
+                    </div>
+                    <a href="/" class="no-product__link">На главную</a>
+                </div>
+            </div>
+        </main>
+        <footer class="footer"></footer>
+        <div class="popup"></div>
+    </div>
+
+    <script type="module" src="/modules/favorites.js"></script>
+</body>
+
+</html>

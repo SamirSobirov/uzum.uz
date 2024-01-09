@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" sizes="32x32" href="/icons/uzum-logo.png" />
+    <title>Uzum Market &mdash; интернет-магазин</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="header"></header>
+        <main class="main">
+            <div class="container">
+                <div class="product-block">
+                    <div class="product-info">
+                        <div class="sliders-container">
+                            <div class="thumb-slider swiper">
+                                <div data-main-swipers class="thumb-slider__wrapper swiper-wrapper"></div>
+                            </div>
+                            <div class="main-slider swiper">
+                                <div data-main-swipers class="main-slider__wrapper swiper-wrapper"></div>
+                                <div class="swiper-pagination"></div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            </div>
+                        </div>
+                        <div class="product-info__inner">
+                            <h2 class="product-info__title"></h2>
+                            <div class="product-info__price-block"></div>
+                            <hr>
+                            <div class="product-info__color">
+                                <span class="name">Цвет:</span>
+                            </div>
+                            <div class="product-counter">
+                                <span class="name">Количество:</span>
+                                <span class="product-counter__minus">&minus;</span>
+                                <span class="product-counter__num">1</span>
+                                <span class="product-counter__plus">&plus;</span>
+                                <span class="product-counter__maximum"></span>
+                            </div>
+                            <div class="product-info__credit-block">
+                                <div>
+                                    <span class="product-info__credit-item_yellow"></span>
+                                    <span class="product-info__credit-item">в рассрочку</span>
+                                </div>
+                                <img class="product-info__credit-arrow" src="/public/icons/arrow.svg" alt="icon">
+                            </div>
+                            <div class="product-info__buttons">
+                                <button data-add-to-cart class="product-info__button product-info__button_cart">Добавить в
+                                    корзину</button>
+                                <button class="product-info__button product-info__button_fav">Добавить в
+                                    избранное</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-description">
+                        <h2 class="product-description__heading">Описание товара</h2>
+                        <p class="product-description__text"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="same-products-slider swiper">
+                <h2 class="same-products-slider__title">Похожие товары</h2>
+                <div class="same-products-slider__wrapper swiper-wrapper"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </main>
+        <footer class="footer"></footer>
+        <div class="popup"></div>
+    </div>
+
+    <script type="module" src="/modules/product.js"></script>
+</body>
+
+</html>
