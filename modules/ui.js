@@ -113,11 +113,11 @@ export function headerCreate(place) {
                     <img class="header__center-icon" src="/icons/header/user.svg" alt="icon">
                     <span class="header__ceter-item-txt" data-reg>${localStorage.getItem('user-name') == null ? 'Войти' : localStorage.getItem('user-name')}</span>
                 </div>
-                <a href="/pages/favorites.html" class="header__center-item">
+                <a href="../pages/favorites.html" class="header__center-item">
                     <img class="header__center-icon" src="/icons/header/fav.svg" alt="icon">
                     <span class="header__ceter-item-txt" style="color: black;">Избранное</span>
                 </a>
-                <a href="/pages/cart.html" style="color: black;" class="header__center-item">
+                <a href="../pages/cart.html" style="color: black;" class="header__center-item">
                     <img class="header__center-icon" src="/icons/header/shop-bag.svg" alt="icon">
                     <span class="header__ceter-item-txt">Корзина</span>
                 </a>
@@ -424,7 +424,7 @@ export function sliderReload(data, place) {
             let price = data[i].price / 1000 + ' &#8381;'
 
             place.innerHTML += `
-                <a href="/pages/product.html" class="swiper-slide product-slide" data-product-id="${data[i].id}">
+                <a href="../pages/product.html" class="swiper-slide product-slide" data-product-id="${data[i].id}">
                     <div class="product-slide__info">
                         <h2 class="product-slide__title">${data[i].title}</h2>
                         <div class="product-slide__price-block">
@@ -443,7 +443,7 @@ export function sliderReload(data, place) {
             let price = fromLastEl.price / 1000 + ' &#8381;'
 
             place.innerHTML += `
-                <a href="/pages/product.html" class="swiper-slide product-slide" data-product-id="${fromLastEl.id}">
+                <a href="../pages/product.html" class="swiper-slide product-slide" data-product-id="${fromLastEl.id}">
                     <div class="product-slide__info">
                         <h2 class="product-slide__title">${fromLastEl.title}</h2>
                         <div class="product-slide__price-block">
@@ -580,7 +580,7 @@ export function reloadCartProducts(data, place) {
                     </svg>
                 </label>
                 <div class="cart-product__info">
-                    <a href="/pages/product.html" data-product-id="${item.id}" class="cart-product__image-box">
+                    <a href="../pages/product.html" data-product-id="${item.id}" class="cart-product__image-box">
                         <img class="cart-product__image"
                             src="${item.media[0]}" alt="image">
                     </a>
@@ -618,7 +618,7 @@ export function searchListReload(data, place) {
 
     for (let item of data) {
         place.innerHTML += `
-        <a href="/pages/product.html" class="search-list__item" data-product-id="${item.id}">
+        <a href="../pages/product.html" class="search-list__item" data-product-id="${item.id}">
             <img class="search-list__icon" src="/public/icons/header/search.svg" alt="icon">
             <span>${item.title}</span>
         </a>
