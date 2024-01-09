@@ -113,7 +113,7 @@ export function headerCreate(place) {
                     <img class="header__center-icon" src="/icons/header/user.svg" alt="icon">
                     <span class="header__ceter-item-txt" data-reg>${localStorage.getItem('user-name') == null ? 'Войти' : localStorage.getItem('user-name')}</span>
                 </div>
-                <a href="./pages/favorites.html" class="header__center-item">
+                <a href="/pages/favorites.html" class="header__center-item">
                     <img class="header__center-icon" src="/icons/header/fav.svg" alt="icon">
                     <span class="header__ceter-item-txt" style="color: black;">Избранное</span>
                 </a>
